@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function imprimeTexto(texto){
+        //     console.log(texto+" math:"+Math.floor(4.4));
+        // }
+        // imprimeTexto("Rafael é bom@");
+
+        imprimeNomeIdade("Rafael", 32);
+        function imprimeNomeIdade(nome, idade){
+            console.log(`Meu nome é ${nome} minha idade é ${idade}`);
+        }
+
+        function soma(n1 = 1, n2 = 2){
+            return n1 + n2;            
+        }
+
+        console.log("Valor da soma:"+ soma());
+
+        
+// Expressão de função
+        let expFuncaoSoma = function(n1, n2){
+            return n1 + n2;
+        }
+
+        console.log(expFuncaoSoma(3,4));
+
+        const somaArrowFunction = (n1, n2) => n1 + n2;
+
+        console.log(somaArrowFunction(2,3));
+
+        // Arrow Function
+        const somaValoresPequenos = (n1, n2) =>{
+            if(n1 > 10 || n2> 10){
+                return "Soma apenas valores entre 1 até 10";
+            }else{
+                return n1 + n2;
+            }
+        }
+
+        console.log(somaValoresPequenos(11,3));
+
+
+       
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

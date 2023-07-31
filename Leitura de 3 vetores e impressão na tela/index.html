@@ -1,0 +1,18 @@
+<script>
+      function fraseBomDia(pronomes, nomes, sobrenomes){
+        const frases = []
+        for (let i = 0; i<pronomes.length;i++){
+            console.log("entrei:" + i);
+            frase = "Olá "+pronomes[i]+" "+nomes[i]+ " "+sobrenomes[i];
+            frases.push(frase);
+        }
+        return frases;
+      }
+      
+      pronomes = ["Sr", "Sra"];
+      nomes = ["Rafael", "Fernanda"];
+      sobrenomes = ["Alves", "Silva"];
+
+      frases = fraseBomDia(pronomes, nomes, sobrenomes);
+      console.log(frases);
+</script>
